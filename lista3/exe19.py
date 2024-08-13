@@ -27,9 +27,9 @@ def modaMediana(vetor):
         else:
             frequencias[numero] = 1
 
-    print(frequencias)        
+    moda = max(frequencias, key=frequencias.get) 
 
-    return mediana
+    return mediana, moda
 
 def ordenaVetor(arr):
 
