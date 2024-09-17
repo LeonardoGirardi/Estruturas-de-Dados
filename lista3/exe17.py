@@ -4,12 +4,16 @@ A em ordem invertida. (Adicione elemento por elemento).
 """
 
 def inverteOrdem(vetor):
-    i = length(vetor)
+    tam = len(vetor)
 
-    while i != 0:
-        print(vetor[i])
+    i = tam - 1
+    novo_vetor = []
 
+    while i >= 0:
+        novo_vetor.append(vetor[i])
+        i -= 1
+    return novo_vetor
 
 vetor = [1,2,3,4,5,6,7,8,9]
 
-inverteOrdem(vetor)
+print(inverteOrdem(vetor))

@@ -7,7 +7,7 @@ novo vetor contendo apenas os elementos pares do vetor original.
 
 def filtrar_pares(vetor):
 
-    pares = filter(lambda x: x % 2 == 0, vetor)
+    pares = filter(lambda x: x % 2 != 0, vetor)
 
     return list(pares)
 
